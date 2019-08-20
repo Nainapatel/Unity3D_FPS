@@ -164,6 +164,7 @@
 -r:/opt/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll
 -r:/opt/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll
 -i:UnityEditor
+Assets/Scripts/CrossAnimate.js
 Assets/Scripts/EnemyScript.js
 Assets/Scripts/GunFire.js
 Assets/Scripts/HandGunDamage.js

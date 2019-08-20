@@ -102,7 +102,6 @@
 -define:ENABLE_NATIVE_ARRAY_CHECKS
 -define:UNITY_TEAM_LICENSE
 -define:CROSS_PLATFORM_INPUT
--r:Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
 -r:/opt/Unity/Editor/Data/Managed/UnityEditor.dll
 -r:/opt/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll
 -r:/opt/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll
@@ -148,6 +147,7 @@
 -r:/opt/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll
 -r:/opt/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll
 -r:/opt/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll
+-r:Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
 -r:Library/FacebookSDK/Facebook.Unity.Settings.dll
 -r:/opt/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll
 -r:/opt/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll
@@ -164,4 +164,7 @@
 -r:/opt/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll
 -r:/opt/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll
 -i:UnityEditor
+Assets/Scripts/CrossAnimate.js
+Assets/Scripts/EnemyScript.js
 Assets/Scripts/GunFire.js
+Assets/Scripts/HandGunDamage.js

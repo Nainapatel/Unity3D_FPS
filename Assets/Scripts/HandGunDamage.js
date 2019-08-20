@@ -9,7 +9,7 @@ function Update () {
         if (Physics.Raycast (transform.position, transform.TransformDirection(Vector3.forward), Shot)){
             TargetDistance = Shot.distance;
                 if (TargetDistance < AllowedRange) {
-                    Shot.transform.SendMessage("DeductPoints", DamageAmount, SendMessageOptions.RequireReceiver);
+                    Shot.transform.SendMessage("DeductPoints", DamageAmount);
                 }
         }
     }
