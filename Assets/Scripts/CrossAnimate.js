@@ -15,7 +15,7 @@ function Update () {
 }
 
 function waitingAnim () {
-    yield WaitForSeconds(0.1);
+        yield WaitForSeconds(0.1);
         UpCurs.GetComponent("Animator").enabled = false;
         DownCurs.GetComponent("Animator").enabled = false;
         LeftCurs.GetComponent("Animator").enabled = false;
