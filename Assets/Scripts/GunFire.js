@@ -5,6 +5,5 @@ function Update () {
         gunsound.Play();
         GetComponent.<Animation>().Play("GunShot");
         GlobalAmmo.CurrentAmmo -= 1;
-        
     }
 }
