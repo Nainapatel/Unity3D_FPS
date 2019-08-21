@@ -3,6 +3,8 @@ var TargetDistance : float;
 var AllowedRange : float = 15;
 
 function Update () {
+    if(GlobalAmmo.LoadedAmmo >= 1){
+
     if(Input.GetButtonDown("Fire1")) {
 
         var Shot : RaycastHit;
@@ -13,4 +15,5 @@ function Update () {
                 }
         }
     }
+}
 }
