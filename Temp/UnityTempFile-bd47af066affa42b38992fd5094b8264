@@ -2,8 +2,9 @@
 -target:library
 -nowarn:0169
 -langversion:4
--out:Temp/Assembly-CSharp-firstpass.dll
+-out:Temp/Assembly-CSharp-Editor-firstpass.dll
 -unsafe
+-r:Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
 -r:/opt/Unity/Editor/Data/Managed/UnityEditor.dll
 -r:/opt/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll
 -r:/opt/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll
@@ -51,17 +52,40 @@
 -r:/opt/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll
 -r:Library/FacebookSDK/Facebook.Unity.Settings.dll
 -r:/opt/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll
+-r:/opt/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll
 -r:/opt/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll
+-r:/opt/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll
+-r:/opt/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll
 -r:/opt/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll
 -r:/opt/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll
 -r:/opt/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll
+-r:/opt/Unity/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll
+-r:/opt/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll
 -r:/opt/Unity/Editor/Data/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll
+-r:/opt/Unity/Editor/Data/UnityExtensions/Unity/UIAutomation/Editor/UnityEditor.UIAutomation.dll
+-r:/opt/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll
 -r:/opt/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll
+-r:/opt/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll
 -r:/opt/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll
+-r:/opt/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll
 -r:/opt/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll
+-r:/opt/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll
+-r:/opt/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll
+-r:/opt/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+-r:/opt/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+-r:/opt/Unity/Editor/Data/PlaybackEngines/TizenPlayer/UnityEditor.Tizen.Extensions.dll
+-r:/opt/Unity/Editor/Data/PlaybackEngines/STVPlayer/UnityEditor.SamsungTV.Extensions.dll
+-r:/opt/Unity/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+-r:/opt/Unity/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+-r:/opt/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+-r:/opt/Unity/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+-r:/opt/Unity/Editor/Data/PlaybackEngines/Facebook/UnityEditor.Facebook.Extensions.dll
 -r:/home/raoinfotech/.config/unity3d/cache/packages/packages.unity.com/com.unity.ads@0.0.16/UnityEngine.Advertisements.dll
+-r:/home/raoinfotech/.config/unity3d/cache/packages/packages.unity.com/com.unity.ads@0.0.16/Editor/UnityEditor.Advertisements.dll
 -r:/home/raoinfotech/.config/unity3d/cache/packages/packages.unity.com/com.unity.analytics@0.0.17/UnityEngine.Analytics.dll
+-r:/home/raoinfotech/.config/unity3d/cache/packages/packages.unity.com/com.unity.analytics@0.0.17/Editor/UnityEditor.Analytics.dll
 -r:/home/raoinfotech/.config/unity3d/cache/packages/packages.unity.com/com.unity.purchasing@0.0.18/UnityEngine.Purchasing.dll
+-r:/home/raoinfotech/.config/unity3d/cache/packages/packages.unity.com/com.unity.purchasing@0.0.18/Editor/UnityEditor.Purchasing.dll
 -r:/opt/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll
 -r:/opt/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll
 -define:UNITY_5_3_OR_NEWER
@@ -75,7 +99,6 @@
 -define:UNITY_2017
 -define:PLATFORM_ARCH_64
 -define:UNITY_64
--define:UNITY_ANALYTICS
 -define:ENABLE_AUDIO
 -define:ENABLE_CACHING
 -define:ENABLE_CLOTH
@@ -158,104 +181,15 @@
 -define:ENABLE_NATIVE_ARRAY_CHECKS
 -define:UNITY_TEAM_LICENSE
 -define:CROSS_PLATFORM_INPUT
-"Assets/Standard Assets/2D/Scripts/Camera2DFollow.cs"
-"Assets/Standard Assets/2D/Scripts/CameraFollow.cs"
-"Assets/Standard Assets/2D/Scripts/Platformer2DUserControl.cs"
-"Assets/Standard Assets/2D/Scripts/PlatformerCharacter2D.cs"
-"Assets/Standard Assets/2D/Scripts/Restarter.cs"
-"Assets/Standard Assets/Cameras/Scripts/AbstractTargetFollower.cs"
-"Assets/Standard Assets/Cameras/Scripts/AutoCam.cs"
-"Assets/Standard Assets/Cameras/Scripts/FreeLookCam.cs"
-"Assets/Standard Assets/Cameras/Scripts/HandHeldCam.cs"
-"Assets/Standard Assets/Cameras/Scripts/LookatTarget.cs"
-"Assets/Standard Assets/Cameras/Scripts/PivotBasedCameraRig.cs"
-"Assets/Standard Assets/Cameras/Scripts/ProtectCameraFromWallClip.cs"
-"Assets/Standard Assets/Cameras/Scripts/TargetFieldOfView.cs"
-"Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/FirstPersonController.cs"
-"Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/HeadBob.cs"
-"Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/MouseLook.cs"
-"Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/RigidbodyFirstPersonController.cs"
-"Assets/Standard Assets/Characters/RollerBall/Scripts/Ball.cs"
-"Assets/Standard Assets/Characters/RollerBall/Scripts/BallUserControl.cs"
-"Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/AICharacterControl.cs"
-"Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonCharacter.cs"
-"Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonUserControl.cs"
-"Assets/Standard Assets/CrossPlatformInput/Scripts/AxisTouchButton.cs"
-"Assets/Standard Assets/CrossPlatformInput/Scripts/ButtonHandler.cs"
-"Assets/Standard Assets/CrossPlatformInput/Scripts/CrossPlatformInputManager.cs"
-"Assets/Standard Assets/CrossPlatformInput/Scripts/InputAxisScrollbar.cs"
-"Assets/Standard Assets/CrossPlatformInput/Scripts/Joystick.cs"
-"Assets/Standard Assets/CrossPlatformInput/Scripts/MobileControlRig.cs"
-"Assets/Standard Assets/CrossPlatformInput/Scripts/PlatformSpecific/MobileInput.cs"
-"Assets/Standard Assets/CrossPlatformInput/Scripts/PlatformSpecific/StandaloneInput.cs"
-"Assets/Standard Assets/CrossPlatformInput/Scripts/TiltInput.cs"
-"Assets/Standard Assets/CrossPlatformInput/Scripts/TouchPad.cs"
-"Assets/Standard Assets/CrossPlatformInput/Scripts/VirtualInput.cs"
-"Assets/Standard Assets/Environment/Water (Basic)/Scripts/WaterBasic.cs"
-"Assets/Standard Assets/Environment/Water/Water/Scripts/Displace.cs"
-"Assets/Standard Assets/Environment/Water/Water/Scripts/GerstnerDisplace.cs"
-"Assets/Standard Assets/Environment/Water/Water/Scripts/MeshContainer.cs"
-"Assets/Standard Assets/Environment/Water/Water/Scripts/PlanarReflection.cs"
-"Assets/Standard Assets/Environment/Water/Water/Scripts/SpecularLighting.cs"
-"Assets/Standard Assets/Environment/Water/Water/Scripts/Water.cs"
-"Assets/Standard Assets/Environment/Water/Water/Scripts/WaterBase.cs"
-"Assets/Standard Assets/Environment/Water/Water/Scripts/WaterTile.cs"
-"Assets/Standard Assets/ParticleSystems/Scripts/AfterburnerPhysicsForce.cs"
-"Assets/Standard Assets/ParticleSystems/Scripts/ExplosionFireAndDebris.cs"
-"Assets/Standard Assets/ParticleSystems/Scripts/ExplosionPhysicsForce.cs"
-"Assets/Standard Assets/ParticleSystems/Scripts/Explosive.cs"
-"Assets/Standard Assets/ParticleSystems/Scripts/ExtinguishableParticleSystem.cs"
-"Assets/Standard Assets/ParticleSystems/Scripts/FireLight.cs"
-"Assets/Standard Assets/ParticleSystems/Scripts/Hose.cs"
-"Assets/Standard Assets/ParticleSystems/Scripts/ParticleSystemMultiplier.cs"
-"Assets/Standard Assets/ParticleSystems/Scripts/SmokeParticles.cs"
-"Assets/Standard Assets/ParticleSystems/Scripts/WaterHoseParticles.cs"
-"Assets/Standard Assets/Utility/ActivateTrigger.cs"
-"Assets/Standard Assets/Utility/AlphaButtonClickMask.cs"
-"Assets/Standard Assets/Utility/AutoMobileShaderSwitch.cs"
-"Assets/Standard Assets/Utility/AutoMoveAndRotate.cs"
-"Assets/Standard Assets/Utility/CameraRefocus.cs"
-"Assets/Standard Assets/Utility/CurveControlledBob.cs"
-"Assets/Standard Assets/Utility/DragRigidbody.cs"
-"Assets/Standard Assets/Utility/DynamicShadowSettings.cs"
-"Assets/Standard Assets/Utility/EventSystemChecker.cs"
-"Assets/Standard Assets/Utility/FollowTarget.cs"
-"Assets/Standard Assets/Utility/ForcedReset.cs"
-"Assets/Standard Assets/Utility/FOVKick.cs"
-"Assets/Standard Assets/Utility/FPSCounter.cs"
-"Assets/Standard Assets/Utility/LerpControlledBob.cs"
-"Assets/Standard Assets/Utility/ObjectResetter.cs"
-"Assets/Standard Assets/Utility/ParticleSystemDestroyer.cs"
-"Assets/Standard Assets/Utility/PlatformSpecificContent.cs"
-"Assets/Standard Assets/Utility/SimpleActivatorMenu.cs"
-"Assets/Standard Assets/Utility/SimpleMouseRotator.cs"
-"Assets/Standard Assets/Utility/SmoothFollow.cs"
-"Assets/Standard Assets/Utility/TimedObjectActivator.cs"
-"Assets/Standard Assets/Utility/TimedObjectDestructor.cs"
-"Assets/Standard Assets/Utility/WaypointCircuit.cs"
-"Assets/Standard Assets/Utility/WaypointProgressTracker.cs"
-"Assets/Standard Assets/Vehicles/Aircraft/Scripts/AeroplaneAiControl.cs"
-"Assets/Standard Assets/Vehicles/Aircraft/Scripts/AeroplaneAudio.cs"
-"Assets/Standard Assets/Vehicles/Aircraft/Scripts/AeroplaneController.cs"
-"Assets/Standard Assets/Vehicles/Aircraft/Scripts/AeroplaneControlSurfaceAnimator.cs"
-"Assets/Standard Assets/Vehicles/Aircraft/Scripts/AeroplanePropellerAnimator.cs"
-"Assets/Standard Assets/Vehicles/Aircraft/Scripts/AeroplaneUserControl2Axis.cs"
-"Assets/Standard Assets/Vehicles/Aircraft/Scripts/AeroplaneUserControl4Axis.cs"
-"Assets/Standard Assets/Vehicles/Aircraft/Scripts/JetParticleEffect.cs"
-"Assets/Standard Assets/Vehicles/Aircraft/Scripts/LandingGear.cs"
-"Assets/Standard Assets/Vehicles/Car/Scripts/BrakeLight.cs"
-"Assets/Standard Assets/Vehicles/Car/Scripts/CarAIControl.cs"
-"Assets/Standard Assets/Vehicles/Car/Scripts/CarAudio.cs"
-"Assets/Standard Assets/Vehicles/Car/Scripts/CarController.cs"
-"Assets/Standard Assets/Vehicles/Car/Scripts/CarSelfRighting.cs"
-"Assets/Standard Assets/Vehicles/Car/Scripts/CarUserControl.cs"
-"Assets/Standard Assets/Vehicles/Car/Scripts/Mudguard.cs"
-"Assets/Standard Assets/Vehicles/Car/Scripts/SkidTrail.cs"
-"Assets/Standard Assets/Vehicles/Car/Scripts/Suspension.cs"
-"Assets/Standard Assets/Vehicles/Car/Scripts/WheelEffects.cs"
--r:/opt/Unity/Editor/Data/Mono/lib/mono/unity/System.Runtime.Serialization.dll
--r:/opt/Unity/Editor/Data/Mono/lib/mono/unity/System.Xml.Linq.dll
--r:/opt/Unity/Editor/Data/Mono/lib/mono/unity/UnityScript.dll
--r:/opt/Unity/Editor/Data/Mono/lib/mono/unity/UnityScript.Lang.dll
--r:/opt/Unity/Editor/Data/Mono/lib/mono/unity/Boo.Lang.dll
--sdk:unity
+"Assets/Standard Assets/Editor/CrossPlatformInput/CrossPlatformInputInitialize.cs"
+"Assets/Standard Assets/Editor/Water/Water4/GerstnerDisplaceEditor.cs"
+"Assets/Standard Assets/Editor/Water/Water4/PlanarReflectionEditor.cs"
+"Assets/Standard Assets/Editor/Water/Water4/SpecularLightingEditor.cs"
+"Assets/Standard Assets/Editor/Water/Water4/WaterBaseEditor.cs"
+"Assets/Standard Assets/Editor/Water/Water4/WaterEditorUtility.cs"
+-r:/opt/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/System.Runtime.Serialization.dll
+-r:/opt/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/System.Xml.Linq.dll
+-r:/opt/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/UnityScript.dll
+-r:/opt/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/UnityScript.Lang.dll
+-r:/opt/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/Boo.Lang.dll
+-sdk:2.0
