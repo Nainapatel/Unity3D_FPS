@@ -2,7 +2,6 @@ import UnityEngine.UI;
 
 var TextDisplay : GameObject;
 var TheDistance : float = PlayerCasting.DistanceFromTarget;
-
 var TheDoor : GameObject;
 
 function Update () {
@@ -10,9 +9,7 @@ function Update () {
     if (Input.GetButtonDown("Action")){
         if (TheDistance <= 2) {
             OpenTheDoor();
-
         }
-
     }
 }
 
