@@ -6,6 +6,8 @@ var RealGun : GameObject;
 var AmmoDisplay : GameObject;
 var PickUpAudio : AudioSource;
 
+var ObjectiveComplete : GameObject;
+
 function Update () {
     TheDistance = PlayerCasting.DistanceFronTarget;
     if (Input.GetButtonDown("Action")) {
@@ -21,6 +23,7 @@ function OnMouseOver () {
         if(TheDistance <= 1){
             
             TakeNineMil();
+            ObjectiveComplete.SetActive(true);
         }
     }
 }

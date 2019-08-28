@@ -4,6 +4,8 @@ var TextDisplay : GameObject;
 var TheDistance : float = PlayerCasting.DistanceFromTarget;
 var TheDoor : GameObject;
 
+var ObjectiveComplete : GameObject;
+
 function Update () {
     TheDistance = PlayerCasting.DistanceFromTarget;
    
@@ -16,6 +18,7 @@ function OnMouseOver () {
     if (Input.GetButtonDown("Action")){
         if (TheDistance <= 2) {
             OpenTheDoor();
+            ObjectiveComplete.SetActive(true);
         }
     }
 }
