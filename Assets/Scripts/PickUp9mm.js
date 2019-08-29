@@ -19,7 +19,6 @@ function OnMouseOver () {
     }
     if (Input.GetButtonDown("Action")) {
         if(TheDistance <= 2){
-            
             TakeNineMil();
             ObjectiveComplete.SetActive(true);
          }

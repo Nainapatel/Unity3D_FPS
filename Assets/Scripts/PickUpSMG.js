@@ -13,13 +13,11 @@ function Update () {
 }
 
 function OnMouseOver () {
-    
     if (TheDistance <= 2) {
         TextDisplay.GetComponent.<Text>().text = "Take SMG";
     }
     if (Input.GetButtonDown("Action")) {
         if(TheDistance <= 2){
-            
             TakeNineMil();
             ObjectiveComplete.SetActive(true);
         }
