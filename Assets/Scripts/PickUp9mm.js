@@ -10,22 +10,21 @@ var ObjectiveComplete : GameObject;
 
 function Update () {
     TheDistance = PlayerCasting.DistanceFronTarget;
-    if (Input.GetButtonDown("Action")) {
-        if(TheDistance <= 2){
-            // TakeNineMil();
-        }
-    }
+    
 }
 
 function OnMouseOver () {
-    if (TheDistance <= 1) {
+    if (TheDistance <= 2) {
         TextDisplay.GetComponent.<Text>().text = "Take 9mm Pistol";
-        if(TheDistance <= 1){
+    }
+    if (Input.GetButtonDown("Action")) {
+        if(TheDistance <= 2){
             
             TakeNineMil();
             ObjectiveComplete.SetActive(true);
-        }
+         }
     }
+
 }
 
 function OnMouseExit () {
