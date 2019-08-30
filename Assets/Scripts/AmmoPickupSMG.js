@@ -8,5 +8,4 @@ function OnTriggerEnter (col : Collider) {
         GlobalAmmo.CurrentAmmo += 30;
         this.gameObject.SetActive(false);
     }
-    
 }
