@@ -167,6 +167,8 @@
 Assets/Scripts/AmmoPickup.js
 Assets/Scripts/AmmoPickupSMG.js
 Assets/Scripts/CrossAnimate.js
+Assets/Scripts/EnemyLook.js
+Assets/Scripts/EnemyMove.js
 Assets/Scripts/EnemyScript.js
 Assets/Scripts/GlobalAmmo.js
 Assets/Scripts/GlobalScore.js
