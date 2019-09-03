@@ -13,8 +13,8 @@ public class ZombieFollow : MonoBehaviour {
     public int IsAttacking;
     public GameObject ScreenFlash;
     public AudioSource Hurt01;
-    public AudioSource Hurt02;
-    public AudioSource Hurt03;
+    // public AudioSource Hurt01;
+    // public AudioSource Hurt01;
     public int PainSound;
 
     void Update () {
@@ -53,17 +53,17 @@ public class ZombieFollow : MonoBehaviour {
         PainSound = Random.Range (1,4);
         yield return new WaitForSeconds(0.9f);
         ScreenFlash.SetActive (true);
-        GlobalHealth.PlayerHealth -= 1;
+        GlobalHealth.PlayerHealth -= 2;
 
         if (PainSound == 1) {
             Hurt01.Play();
         }
-        if (PainSound == 2) {
-            Hurt02.Play();
-        }
-        if (PainSound == 3) {
-            Hurt03.Play();
-        }   
+        // if (PainSound == 2) {
+        //     Hurt01.Play();
+        // }
+        // if (PainSound == 3) {
+        //     Hurt01.Play();
+        // }   
         yield return new WaitForSeconds(0.05f);
         ScreenFlash.SetActive (false);
         yield return new WaitForSeconds (1);

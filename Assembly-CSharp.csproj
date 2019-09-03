@@ -52,9 +52,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\GlobalHealth.cs" />
+     <Compile Include="Assets\Scripts\HealthMonitor.cs" />
      <Compile Include="Assets\Scripts\ZombieFollow.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
+     <None Include="Assets\Objects\Tree01\archibase.net.txt" />
      <None Include="Assets\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
      <None Include="Assets\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularSmooth.shader" />
      <None Include="Assets\Standard Assets\Effects\Projectors\Guidelines.txt" />
