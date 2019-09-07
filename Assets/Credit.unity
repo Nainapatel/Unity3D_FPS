@@ -183,7 +183,7 @@ MonoBehaviour:
   m_Text: 'Lead Designer : Happy Bhalodiya
 
 
-    Lead Programmer : Ms. Bhalodiya
+    Lead Programmer : Happy Bhalodiya
 
 
     Storyboard : Happy Bhalodiya'
@@ -292,7 +292,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 259040505}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 248, y: 154, z: 0}
+  m_LocalPosition: {x: 331.5, y: 160.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 420779663}
