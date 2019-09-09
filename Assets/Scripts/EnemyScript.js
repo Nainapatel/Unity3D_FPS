@@ -9,6 +9,7 @@ function Update () {
     if (EnemyHealth <= 0) {
         this.GetComponent("ZombieFollow").enabled = false;
         TheZombie.GetComponent.<Animation>().Play("Dead");
+        EnemyHealth = 1;
         EndZombie();
     }
 }
