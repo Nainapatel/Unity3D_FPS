@@ -10,7 +10,7 @@ public class SplashToMenu : MonoBehaviour {
 	}
 
 	IEnumerator SplashFinish () {
-		yield return new WaitForSeconds (5.5f);
+		yield return new WaitForSeconds(5.5f);
 		SceneManager.LoadScene(4);
 	}
 

@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts\GlobalHealth.cs" />
      <Compile Include="Assets\Scripts\HealthMonitor.cs" />
      <Compile Include="Assets\Scripts\MainMenuOptions.cs" />
+     <Compile Include="Assets\Scripts\SpiderFollow.cs" />
      <Compile Include="Assets\Scripts\SplashToMenu.cs" />
      <Compile Include="Assets\Scripts\ZombieFollow.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
