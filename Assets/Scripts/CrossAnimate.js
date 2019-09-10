@@ -5,14 +5,11 @@ var RightCurs : GameObject;
 
 function Update () {
     if(GlobalAmmo.LoadedAmmo >= 1){
-
-    
     if (Input.GetButtonDown("Fire1")){
         UpCurs.GetComponent("Animator").enabled = true;
         DownCurs.GetComponent("Animator").enabled = true;
         LeftCurs.GetComponent("Animator").enabled = true;
         RightCurs.GetComponent("Animator").enabled = true;
-       
         WaitingAnim();
     }
 }
