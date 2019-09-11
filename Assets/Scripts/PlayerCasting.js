@@ -7,5 +7,6 @@ function Update () {
     if (Physics.Raycast (transform.position, transform.TransformDirection(Vector3.forward),hit))   {
         ToTarget = hit.distance;
         DistanceFormTarget = ToTarget;
+        PlayerPrefs.SetFloat("TheCasting", DistanceFormTarget);
     }     
 }

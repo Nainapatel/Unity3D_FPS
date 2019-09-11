@@ -53,13 +53,17 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\AplashToMenu.cs" />
      <Compile Include="Assets\Scripts\CardToMenuC.cs" />
+     <Compile Include="Assets\Scripts\CreakyDoorOpen.cs" />
      <Compile Include="Assets\Scripts\Cutscenes\CutScene01.cs" />
      <Compile Include="Assets\Scripts\GlobalHealth.cs" />
      <Compile Include="Assets\Scripts\HealthMonitor.cs" />
      <Compile Include="Assets\Scripts\MainMenuOptions.cs" />
+     <Compile Include="Assets\Scripts\SkyRotation.cs" />
      <Compile Include="Assets\Scripts\SpiderFollow.cs" />
      <Compile Include="Assets\Scripts\SplashToMenu.cs" />
      <Compile Include="Assets\Scripts\ZombieFollow.cs" />
+     <Compile Include="Assets\WorldSkies\Demo\Scripts\LookCamera.cs" />
+     <Compile Include="Assets\WorldSkies\Demo\Scripts\SkyboxChanger.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
      <None Include="Assets\Objects\Tree01\archibase.net.txt" />
