@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\GlobalHealth.cs" />
      <Compile Include="Assets\Scripts\HealthMonitor.cs" />
      <Compile Include="Assets\Scripts\MainMenuOptions.cs" />
+     <Compile Include="Assets\Scripts\PauseGame.cs" />
      <Compile Include="Assets\Scripts\SkyRotation.cs" />
      <Compile Include="Assets\Scripts\SpiderFollow.cs" />
      <Compile Include="Assets\Scripts\SplashToMenu.cs" />
