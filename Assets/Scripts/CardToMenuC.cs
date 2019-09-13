@@ -9,10 +9,8 @@ void Start () {
 StartCoroutine (ReturnToMenu ());
 }
 
-
-
 IEnumerator ReturnToMenu(){
 	yield return new WaitForSeconds (11);
-	SceneManager.LoadScene(3);
+	SceneManager.LoadScene(4);
 }
 }
