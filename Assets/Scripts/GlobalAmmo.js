@@ -11,6 +11,7 @@ var LoadedDisplay : GameObject;
 function Update () {
     InternalAmmo = CurrentAmmo;
     InternalLoaded = LoadedAmmo;
+    PlayerPrefs.SetInt("AmmoLevel", CurrentAmmo);
     AmmoDisplay.GetComponent.<Text>().text = "" + InternalAmmo;
     LoadedDisplay.GetComponent.<Text>().text = "" + LoadedAmmo;
 }

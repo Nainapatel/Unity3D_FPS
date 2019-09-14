@@ -53,6 +53,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\AplashToMenu.cs" />
      <Compile Include="Assets\Scripts\CardToMenuC.cs" />
+     <Compile Include="Assets\Scripts\CaveDoor.cs" />
      <Compile Include="Assets\Scripts\CreakyDoorOpen.cs" />
      <Compile Include="Assets\Scripts\Cutscenes\CutScene01.cs" />
      <Compile Include="Assets\Scripts\GlobalHealth.cs" />
