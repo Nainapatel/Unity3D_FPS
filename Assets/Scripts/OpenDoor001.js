@@ -12,15 +12,14 @@ function Update () {
 }
 
 function OnMouseOver () {
-    if (TheDistance <= 2){
+    if (TheDistance <= 1){
         TextDisplay.GetComponent.<Text>().text = "Press Button";
     }
-    if (Input.GetButtonDown("Action")){
-        if (TheDistance <= 2) {
+        if (TheDistance <= 1) {
             OpenTheDoor();
             ObjectiveComplete.SetActive(true);
         }
-    }
+   
 }
 
 function OnMouseExit () {

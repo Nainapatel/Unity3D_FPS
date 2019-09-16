@@ -8,27 +8,43 @@ public class CaveDoor : MonoBehaviour {
 
 	public float TheDistance;
 	public GameObject ActionDisplay;
+	public AudioSource creakSound;
+	public GameObject fadeOutScreen;
+	public int takenGun;
 	void Update () {
 		TheDistance = PlayerPrefs.GetFloat("TheCasting");
+		takenGun = PlayerPrefs.GetInt("TakenAGun");
 	}
 
 	void OnMouseOver() {
+		if(takenGun == 1){
+
+		
 		if (TheDistance <= 3) {
 			ActionDisplay.GetComponent<Text>().text = "Enter Cave";
 			ActionDisplay.SetActive(true);
 		}
 		if (Input.GetButtonDown("Action")){
 			if (TheDistance <= 3) {
+				creakSound.Play();
+				fadeOutScreen.SetActive(true);
+				StartCoroutine(EnterTheCave());
 				GetComponent<BoxCollider>().enabled = false;
 				ActionDisplay.SetActive(false);
-				SceneManager.LoadScene(6);
 				
 			}
 		}
-		
+		}
 	}
+	
 
 	void OnMouseExit() {
 		ActionDisplay.SetActive(false);
 	}
+IEnumerator EnterTheCave(){
+fadeOutScreen.GetComponent<Animation>().Play("FadeOutAnim");
+yield return new WaitForSeconds(1.5f);
+SceneManager.LoadScene(6);
+}
+
 }
