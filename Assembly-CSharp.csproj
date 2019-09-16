@@ -64,6 +64,8 @@
      <Compile Include="Assets\Scripts\SkyRotation.cs" />
      <Compile Include="Assets\Scripts\SpiderFollow.cs" />
      <Compile Include="Assets\Scripts\SplashToMenu.cs" />
+     <Compile Include="Assets\Scripts\SubVoice\A001Spider.cs" />
+     <Compile Include="Assets\Scripts\SubVoice\A002Door.cs" />
      <Compile Include="Assets\Scripts\ZombieFollow.cs" />
      <Compile Include="Assets\WorldSkies\Demo\Scripts\LookCamera.cs" />
      <Compile Include="Assets\WorldSkies\Demo\Scripts\SkyboxChanger.cs" />

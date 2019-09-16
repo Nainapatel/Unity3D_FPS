@@ -7,6 +7,7 @@ var AmmoDisplay : GameObject;
 var PickUpAudio : AudioSource;
 
 var ObjectiveComplete : GameObject;
+var DoorStopper : GameObject;
 
 function Update () {
     TheDistance = PlayerCasting.DistanceFronTarget;
@@ -33,6 +34,7 @@ function OnMouseExit () {
 function TakeNineMil () {
 
     PlayerPrefs.SetInt("TakenAGun", 1);
+    DoorStopper.SetActive(false);
     PickUpAudio.Play();
     transform.position = Vector3(0, -1000, 0);
     FakeGun.SetActive(false);
