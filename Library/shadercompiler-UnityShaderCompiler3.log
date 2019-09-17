@@ -1,0 +1,11 @@
+Base path: /opt/Unity/Editor/Data
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=18 insize=1435 outsize=8289 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=3273 outsize=3709 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=1526 outsize=12465 ok=1
+Unhandled exception: Protocol error - failed to read correct magic number
+
+Quitting shader compiler process
