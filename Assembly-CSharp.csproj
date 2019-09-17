@@ -62,6 +62,7 @@
      <Compile Include="Assets\Scripts\PauseGame.cs" />
      <Compile Include="Assets\Scripts\RespawnLevel.cs" />
      <Compile Include="Assets\Scripts\SkyRotation.cs" />
+     <Compile Include="Assets\Scripts\SniperScopeActive.cs" />
      <Compile Include="Assets\Scripts\SpiderFollow.cs" />
      <Compile Include="Assets\Scripts\SplashToMenu.cs" />
      <Compile Include="Assets\Scripts\SubVoice\A001Spider.cs" />
