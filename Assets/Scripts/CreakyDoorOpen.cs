@@ -14,18 +14,18 @@ public class CreakyDoorOpen : MonoBehaviour {
 	}
 
 	void OnMouseOver() {
-		if (TheDistance <= 3) {
+		if (TheDistance <= 1) {
 			ActionDisplay.GetComponent<Text>().text = "Open Door";
 			ActionDisplay.SetActive(true);
 		}
-		if (Input.GetButtonDown("Action")){
-			if (TheDistance <= 3) {
+	
+			if (TheDistance <= 1) {
 				GetComponent<BoxCollider>().enabled = false;
 				ActionDisplay.SetActive(false);
 				TheDoor.GetComponent<Animation>().Play("OpenDoorAnim");
 				CreakSound.Play();
 			}
-		}
+		
 		
 	}
 
