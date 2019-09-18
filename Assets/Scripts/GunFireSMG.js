@@ -3,7 +3,6 @@ var SMGSound : AudioSource;
 var MuzzleFlash : GameObject;
 var AmmoCount : int;
 var Firing : int;
-
 var UpCurs : GameObject;
 var DownCurs : GameObject;
 var LeftCurs : GameObject;
