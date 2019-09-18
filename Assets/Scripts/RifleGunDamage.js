@@ -1,6 +1,6 @@
 var DamageAmount : int = 5;
 var TargetDistance : float;
-var AllowedRange : float = 100;
+var AllowedRange : float = 80;
 
 var hit : RaycastHit;
 var TheBullet : GameObject;
