@@ -21,17 +21,17 @@ public class SpiderFollow : MonoBehaviour {
         transform.LookAt (ThePlayer.transform);
         if (Physics.Raycast (transform.position, transform.TransformDirection(Vector3.forward), out Shot)){
             TargetDistance = Shot.distance;
-            if(TargetDistance < AllowedRange) {
+            // if(TargetDistance < AllowedRange) {
                 EnemySpeed = 0.03f;
                 if(AttackTrigger == 0){
                     TheEnemy.GetComponent<Animation> ().Play ("Walk");
                     transform.position = Vector3.MoveTowards (transform.position, ThePlayer.transform.position, Time.deltaTime);
                 }
-            }
-            else {
-                EnemySpeed = 0;
-                TheEnemy.GetComponent<Animation> ().Play("Idle");
-            }
+            // }
+            // else {
+            //     EnemySpeed = 0;
+            //     TheEnemy.GetComponent<Animation> ().Play("Idle");
+            // }
         }
         if(AttackTrigger == 1) {
             if(IsAttacking == 0){

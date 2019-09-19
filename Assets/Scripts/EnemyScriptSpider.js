@@ -10,6 +10,7 @@ function Update () {
         this.GetComponent("SpiderFollow").enabled = false;
         TheSpider.GetComponent.<Animation>().Play("Death");
         EnemyHealth = 1;
+        EndZombie();
     }
 }
 
