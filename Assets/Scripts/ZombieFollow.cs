@@ -20,22 +20,16 @@ public class ZombieFollow : MonoBehaviour {
         transform.LookAt (ThePlayer.transform);
         if (Physics.Raycast (transform.position, transform.TransformDirection(Vector3.forward), out Shot)){
             TargetDistance = Shot.distance;
-            // if(TargetDistance < AllowedRange) {
                 EnemySpeed = 0.01f;
                 if(AttackTrigger == 0){
                     TheEnemy.GetComponent<Animation> ().Play ("Walk");
                     transform.position = Vector3.MoveTowards (transform.position, ThePlayer.transform.position, Time.deltaTime);
                 }
-            // }
-            // else {
-            //     EnemySpeed = 0;
-            //     TheEnemy.GetComponent<Animation> ().Play("Idle");
-            // }
         }
         if(AttackTrigger == 1) {
             if(IsAttacking == 0){
                 StartCoroutine (EnemyDamage ());
-            }
+        }
             EnemySpeed = 0;
             TheEnemy.GetComponent<Animation> ().Play ("Attack");
         }
@@ -53,11 +47,9 @@ public class ZombieFollow : MonoBehaviour {
         yield return new WaitForSeconds(0.9f);
         ScreenFlash.SetActive (true);
         GlobalHealth.PlayerHealth -= 2;
-
         if (PainSound == 1) {
             Hurt01.Play();
         }
-        
         yield return new WaitForSeconds(0.05f);
         ScreenFlash.SetActive (false);
         yield return new WaitForSeconds (1);

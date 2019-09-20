@@ -11,7 +11,7 @@ public class SniperScopeActive : MonoBehaviour {
 	public bool zoomingIn = false;
  
 	void Update () {
-		if (Input.GetMouseButtonDown(1)){
+	if (Input.GetKeyDown("z")) {
 			if(zoomingIn == false){
 				sniperScopeTex.SetActive(true);
 				originalCursor.SetActive(false);
@@ -20,7 +20,7 @@ public class SniperScopeActive : MonoBehaviour {
 			}
 			
 		}
-		if (Input.GetMouseButtonUp(1)){
+	if (Input.GetKeyDown("x")) {
 			StopAllCoroutines();
 			fieldView = 60; 
 			playerCam.GetComponent<Camera>().fieldOfView = fieldView;

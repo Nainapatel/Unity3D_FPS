@@ -31,6 +31,8 @@ function OnMouseExit () {
 }
 
 function TakeNineMil () {
+
+    PlayerPrefs.SetInt("TakenAGun", 1);
     PickUpAudio.Play();
     transform.position = Vector3(0, -1000, 0);
     FakeGun.SetActive(false);

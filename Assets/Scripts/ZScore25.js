@@ -1,5 +1,10 @@
 var ObjectiveComplete : GameObject;
+// GlobalScore.CurrentScore = 0;
+
 function DeductPoints (DamageAmount : int) {
-    GlobalScore.CurrentScore += 25;
+    Debug.Log("CurrentScore: " + GlobalScore.CurrentScore);
+
+
+    GlobalScore.CurrentScore += 1;
     ObjectiveComplete.SetActive(true);
 }

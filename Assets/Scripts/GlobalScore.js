@@ -5,5 +5,7 @@ var ScoreText : GameObject;
 
 function Update () {
     InternalScore = CurrentScore;
+
     ScoreText.GetComponent.<Text>().text = "" + InternalScore;
+
 }

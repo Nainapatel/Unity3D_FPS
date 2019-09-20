@@ -9,22 +9,23 @@ var PickUpAudio : AudioSource;
 var ObjectiveComplete : GameObject;
 var DoorStopper : GameObject;
 
+
 function Update () {
     TheDistance = PlayerCasting.DistanceFronTarget;
     
 }
 
 function OnMouseOver () {
-    if (TheDistance <= 2) {
-        TextDisplay.GetComponent.<Text>().text = "Take Sniper";
-    }
-    if (Input.GetButtonDown("Action")) {
-        if(TheDistance <= 2){
-            TakeNineMil();
-            ObjectiveComplete.SetActive(true);
-         }
-    }
 
+        if (TheDistance <= 2) {
+            TextDisplay.GetComponent.<Text>().text = "Take Sniper";
+        }
+        if (Input.GetButtonDown("Action")) {
+            if(TheDistance <= 2){
+                TakeNineMil();
+                ObjectiveComplete.SetActive(true);
+             }
+        }
 }
 
 function OnMouseExit () {
