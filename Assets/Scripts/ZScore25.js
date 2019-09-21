@@ -5,6 +5,6 @@ function DeductPoints (DamageAmount : int) {
     Debug.Log("CurrentScore: " + GlobalScore.CurrentScore);
 
 
-    GlobalScore.CurrentScore += 1;
+    // GlobalScore.CurrentScore += 1;
     ObjectiveComplete.SetActive(true);
 }

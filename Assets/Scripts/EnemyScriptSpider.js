@@ -15,6 +15,7 @@ function Update () {
 }
 
 function EndZombie () {
-    yield WaitForSeconds(3);
+    yield WaitForSeconds(1);
         Destroy(gameObject);
+        GlobalScore.CurrentScore += 1;
 }

@@ -8,11 +8,12 @@ var ReloadAvailable : int;
 function Update () {
     ClipCount = GlobalAmmo.LoadedAmmo;
     ReserveCount = GlobalAmmo.CurrentAmmo;
-
+  
     if (ReserveCount == 0) {
         ReloadAvailable = 0;
     }else{
         ReloadAvailable = 10 - ClipCount;
+       
     }
     if (Input.GetButtonDown("Reload")){
         if (ReloadAvailable >=1){
