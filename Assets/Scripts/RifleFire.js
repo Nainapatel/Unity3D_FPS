@@ -4,7 +4,7 @@ function Update () {
         var gunsound : AudioSource = GetComponent.<AudioSource>();
         gunsound.Play();
         
-        // GetComponent.<Animation>().Play("GunShot");
+         GetComponent.<Animation>().Play("RifleShot");
         GlobalAmmo.LoadedAmmo -= 1;
     }
 }
