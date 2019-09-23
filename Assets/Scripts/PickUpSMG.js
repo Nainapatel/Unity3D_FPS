@@ -8,6 +8,12 @@ var PickUpAudio : AudioSource;
 
 var ObjectiveComplete : GameObject;
 var Mechanics : GameObject;
+static var PickUp : int;
+var PickUpRifle : GameObject;
+var PickUp9mm : GameObject;
+var PickUpSniper : GameObject;
+var PickUpSMG : GameObject;
+
 
 function Update () {
     TheDistance = PlayerCasting.DistanceFronTarget;
@@ -18,6 +24,9 @@ function OnMouseOver () {
         TextDisplay.GetComponent.<Text>().text = "Take SMG";
     }
     if (Input.GetButtonDown("Action")) {
+        PickUpRifle.SetActive(false);
+        PickUp9mm.SetActive(false);
+        PickUpSniper.SetActive(false);
         if(TheDistance <= 2){
             TakeNineMil();
             Mechanics.SetActive(true);
