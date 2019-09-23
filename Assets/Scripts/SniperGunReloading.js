@@ -33,16 +33,17 @@ function Update () {
 
 function EnableScripts () {
     yield WaitForSeconds(1.1);
-    this.GetComponent("RifleFire").enabled = true;
+    this.GetComponent("SniperFire").enabled = true;
     CrossObject.SetActive(true);
     MechanicsObject.SetActive(true);
 }
 
 
 function ActionReload () {
-    this.GetComponent("RifleFire").enabled = false;
+    this.GetComponent("SniperFire").enabled = false;
     CrossObject.SetActive(false);
     MechanicsObject.SetActive(false);
     ReloadSound.Play();
+    Debug.Log("reach==========: ");
     GetComponent.<Animation>().Play("SniperReloadAnim");
 }

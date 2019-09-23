@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.698
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.7209649, g: 0.6515704, b: 0.5468034, a: 0.698}
+  m_IndirectSpecularColor: {r: 0.6912697, g: 0.6245032, b: 0.5235571, a: 0.698}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -2218,19 +2218,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 92df900e7572a496d8c8cd7f027e5ef6, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 92df900e7572a496d8c8cd7f027e5ef6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -1.11
+      value: 49.709003
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 92df900e7572a496d8c8cd7f027e5ef6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 88.786
+      value: 104.254005
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 92df900e7572a496d8c8cd7f027e5ef6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 15.565321
+      value: -9.551001
       objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: 92df900e7572a496d8c8cd7f027e5ef6, type: 3}
       propertyPath: m_Layer
@@ -2349,7 +2349,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 134507008}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f51f78003f054b9bb82217bc00e119b, type: 3}
+  m_Script: {fileID: 11500000, guid: e8a23b016b61d4c5fa6e7990f5dbfcce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ReloadSound: {fileID: 169810818}
@@ -2461,6 +2461,7 @@ Animation:
   m_Animation: {fileID: 7400000, guid: f90949d1e503a47e786e09c04d5387d2, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: f90949d1e503a47e786e09c04d5387d2, type: 2}
+  - {fileID: 7400000, guid: f78b6c41c164b4d8db6117c64bb3fb64, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
@@ -20424,7 +20425,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: fe267fa2f58284df5b5f545075e0d3e2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0.55200016
+      value: -1.203
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: fe267fa2f58284df5b5f545075e0d3e2, type: 3}
       propertyPath: m_IsActive
@@ -20452,11 +20453,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: fe267fa2f58284df5b5f545075e0d3e2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 15.416002
+      value: 0.27600002
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: fe267fa2f58284df5b5f545075e0d3e2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -28.994503
+      value: 0.16800001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fe267fa2f58284df5b5f545075e0d3e2, type: 3}
