@@ -44,7 +44,7 @@ function ActionReload () {
     CrossObject.SetActive(false);
     MechanicsObject.SetActive(false);
     ReloadSound.Play();
-    Debug.Log("reach==========: ");
+   
     GetComponent.<Animation>().Play("RifleReloadAnim");
 }
 

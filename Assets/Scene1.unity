@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.698
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.6912697, g: 0.6245032, b: 0.5235571, a: 0.698}
+  m_IndirectSpecularColor: {r: 0.6822226, g: 0.6162616, b: 0.51651645, a: 0.698}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -486,15 +486,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: b3dbcb37458864d91a68c32c1922090e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 22.00352
+      value: -0.221624
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: b3dbcb37458864d91a68c32c1922090e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -8.289712
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: b3dbcb37458864d91a68c32c1922090e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -176.1732
       objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: b3dbcb37458864d91a68c32c1922090e, type: 3}
       propertyPath: m_IsActive
@@ -2218,7 +2218,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 92df900e7572a496d8c8cd7f027e5ef6, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 92df900e7572a496d8c8cd7f027e5ef6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -9319,7 +9319,24 @@ GameObject:
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: fe267fa2f58284df5b5f545075e0d3e2, type: 3}
   m_PrefabInternal: {fileID: 1526824863}
---- !u!111 &445566737
+--- !u!114 &445566735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 445566733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0275599c966f40e3a5185b565976440, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ReloadSound: {fileID: 169810818}
+  CrossObject: {fileID: 1391969400}
+  MechanicsObject: {fileID: 645319153}
+  ClipCount: 0
+  ReserveCount: 0
+  ReloadAvailable: 0
+--- !u!111 &445566736
 Animation:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -9327,9 +9344,9 @@ Animation:
   m_GameObject: {fileID: 445566733}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: d7500438a17044a26999488961a67337, type: 2}
+  m_Animation: {fileID: 7400000, guid: 627b1de1c94ca4c069f6490c62d1c150, type: 2}
   m_Animations:
-  - {fileID: 7400000, guid: d7500438a17044a26999488961a67337, type: 2}
+  - {fileID: 7400000, guid: 627b1de1c94ca4c069f6490c62d1c150, type: 2}
   - {fileID: 7400000, guid: 78014820cda4647e58a7aeb419c20249, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
@@ -9427,24 +9444,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58354df18924a4807acdcc65289e49af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Flash: {fileID: 1852039261}
---- !u!114 &445566740
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 445566733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0275599c966f40e3a5185b565976440, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ReloadSound: {fileID: 169810818}
-  CrossObject: {fileID: 1391969400}
-  MechanicsObject: {fileID: 645319153}
-  ClipCount: 0
-  ReserveCount: 0
-  ReloadAvailable: 0
 --- !u!4 &453150046
 Transform:
   m_ObjectHideFlags: 0
@@ -20425,7 +20424,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: fe267fa2f58284df5b5f545075e0d3e2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -1.203
+      value: -3.4444447
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: fe267fa2f58284df5b5f545075e0d3e2, type: 3}
       propertyPath: m_IsActive
@@ -20453,11 +20452,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: fe267fa2f58284df5b5f545075e0d3e2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0.27600002
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: fe267fa2f58284df5b5f545075e0d3e2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0.16800001
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fe267fa2f58284df5b5f545075e0d3e2, type: 3}
@@ -25394,6 +25393,7 @@ Animation:
   m_Animation: {fileID: 7400000, guid: 769d7b991a48049a490f60a76d8791e6, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: 769d7b991a48049a490f60a76d8791e6, type: 2}
+  - {fileID: 7400000, guid: e1c3146ac4c1843178035344cb3148d9, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
@@ -25406,7 +25406,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1677183525}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0275599c966f40e3a5185b565976440, type: 3}
+  m_Script: {fileID: 11500000, guid: 86658c834328e41ef949af12fb9a56ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ReloadSound: {fileID: 169810818}
@@ -25426,7 +25426,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c9e3d48f7d314cdaa1020fe76e0c3e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Flash: {fileID: 408188126}
 --- !u!82 &1677183530
 AudioSource:
   m_ObjectHideFlags: 0
