@@ -9444,6 +9444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58354df18924a4807acdcc65289e49af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Flash: {fileID: 1852039261}
 --- !u!4 &453150046
 Transform:
   m_ObjectHideFlags: 0

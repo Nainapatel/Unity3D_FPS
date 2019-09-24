@@ -1,4 +1,4 @@
-// var Flash : GameObject;
+var Flash : GameObject;
 
 
 function Update () {
@@ -6,15 +6,15 @@ function Update () {
     if(Input.GetButtonDown("Fire1")) {
         var gunsound : AudioSource = GetComponent.<AudioSource>();
         gunsound.Play();
-        // Flash.SetActive(true);
-        // Muzzleoff();
+        Flash.SetActive(true);
+        Muzzleoff();
         GetComponent.<Animation>().Play("GunShot9mm");
         GlobalAmmo.LoadedAmmo -= 1;
     }
 }
 }
 
-// function Muzzleoff () {
-//     yield WaitForSeconds(0.1);
-//     Flash.SetActive(false);
-// }
+function Muzzleoff () {
+    yield WaitForSeconds(0.1);
+    Flash.SetActive(false);
+}
