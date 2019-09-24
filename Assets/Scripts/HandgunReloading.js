@@ -45,5 +45,5 @@ function ActionReload () {
     CrossObject.SetActive(false);
     MechanicsObject.SetActive(false);
     ReloadSound.Play();
-    GetComponent.<Animation>().Play("HandgunReload");
+    GetComponent.<Animation>().Play("HandGunReloadAnim");
 }
