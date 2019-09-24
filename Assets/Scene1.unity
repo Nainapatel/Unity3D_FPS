@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.698
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.7245064, g: 0.6547932, b: 0.54957056, a: 0.698}
+  m_IndirectSpecularColor: {r: 0.72419953, g: 0.6545152, b: 0.5493357, a: 0.698}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -15908,11 +15908,50 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: b057ed181a19640fda1fff84792825bc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b057ed181a19640fda1fff84792825bc, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1089884133 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: b057ed181a19640fda1fff84792825bc, type: 3}
+  m_PrefabInternal: {fileID: 1089884132}
+--- !u!114 &1089884134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1089884133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 502444f4d89454cf4b297fa0a79508c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TheDistance: 0
+  TextDisplay: {fileID: 0}
+  RealKnife: {fileID: 1089884133}
+  DoorStopper: {fileID: 0}
+  PickUpRifle: {fileID: 134507008}
+  PickUp9mm: {fileID: 445566733}
+  PickUpSniper: {fileID: 435884548}
+  PickUpSMG: {fileID: 1677183525}
+  PickUpKnife: {fileID: 1089884133}
+--- !u!111 &1089884135
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1089884133}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: cdd3c8a41b76045f6b92039782cb6e03, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1090882605
 GameObject:
   m_ObjectHideFlags: 0
@@ -16955,7 +16994,6 @@ MonoBehaviour:
   TextDisplay: {fileID: 378339644}
   FakeGun: {fileID: 1240404267}
   RealGun: {fileID: 445566733}
-  AmmoDisplay: {fileID: 1858849014}
   PickUpAudio: {fileID: 81694414}
   ObjectiveComplete: {fileID: 0}
   DoorStopper: {fileID: 2014142463}
@@ -16963,6 +17001,7 @@ MonoBehaviour:
   PickUp9mm: {fileID: 445566733}
   PickUpSniper: {fileID: 435884548}
   PickUpSMG: {fileID: 1677183525}
+  PickUpKnife: {fileID: 0}
 --- !u!23 &1159219926
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20428,7 +20467,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: fe267fa2f58284df5b5f545075e0d3e2, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: fe267fa2f58284df5b5f545075e0d3e2, type: 3}
       propertyPath: m_Layer
@@ -24624,7 +24663,6 @@ MonoBehaviour:
   TextDisplay: {fileID: 378339644}
   FakeGun: {fileID: 1539396747}
   RealGun: {fileID: 435884548}
-  AmmoDisplay: {fileID: 1202404199}
   PickUpAudio: {fileID: 81694414}
   ObjectiveComplete: {fileID: 0}
   DoorStopper: {fileID: 1943837818}
@@ -24632,6 +24670,7 @@ MonoBehaviour:
   PickUp9mm: {fileID: 445566733}
   PickUpSniper: {fileID: 435884548}
   PickUpSMG: {fileID: 1677183525}
+  PickUpKnife: {fileID: 1089884133}
 --- !u!1 &1596191392
 GameObject:
   m_ObjectHideFlags: 0
@@ -24931,7 +24970,6 @@ MonoBehaviour:
   TextDisplay: {fileID: 378339644}
   FakeGun: {fileID: 632510834}
   RealGun: {fileID: 1677183525}
-  AmmoDisplay: {fileID: 1800657798}
   PickUpAudio: {fileID: 81694414}
   ObjectiveComplete: {fileID: 0}
   Mechanics: {fileID: 2094966135}
@@ -24939,6 +24977,7 @@ MonoBehaviour:
   PickUp9mm: {fileID: 445566733}
   PickUpSniper: {fileID: 435884548}
   PickUpSMG: {fileID: 1677183525}
+  PickUpKnife: {fileID: 0}
 --- !u!23 &1615551491
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30569,7 +30608,6 @@ MonoBehaviour:
   TextDisplay: {fileID: 378339644}
   FakeGun: {fileID: 1706536522}
   RealGun: {fileID: 134507008}
-  AmmoDisplay: {fileID: 271042345}
   PickUpAudio: {fileID: 81694414}
   ObjectiveComplete: {fileID: 0}
   DoorStopper: {fileID: 1943837818}
@@ -30577,6 +30615,7 @@ MonoBehaviour:
   PickUp9mm: {fileID: 445566733}
   PickUpSniper: {fileID: 435884548}
   PickUpSMG: {fileID: 1677183525}
+  PickUpKnife: {fileID: 0}
 --- !u!23 &1842296593
 MeshRenderer:
   m_ObjectHideFlags: 0

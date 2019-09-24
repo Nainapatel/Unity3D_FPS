@@ -3,7 +3,7 @@ var TextDisplay : GameObject;
 
 var FakeGun : GameObject;
 var RealGun : GameObject;
-var AmmoDisplay : GameObject;
+
 var PickUpAudio : AudioSource;
 
 var ObjectiveComplete : GameObject;
@@ -13,7 +13,7 @@ var PickUpRifle : GameObject;
 var PickUp9mm : GameObject;
 var PickUpSniper : GameObject;
 var PickUpSMG : GameObject;
-
+var PickUpKnife : GameObject;
 
 function Update () {
     TheDistance = PlayerCasting.DistanceFronTarget;
@@ -27,6 +27,7 @@ function OnMouseOver () {
         PickUpRifle.SetActive(false);
         PickUp9mm.SetActive(false);
         PickUpSniper.SetActive(false);
+        PickUpKnife.SetActive(false);
         if(TheDistance <= 2){
             TakeNineMil();
             Mechanics.SetActive(true);
@@ -46,5 +47,5 @@ function TakeNineMil () {
     transform.position = Vector3(0, -1000, 0);
     FakeGun.SetActive(false);
     RealGun.SetActive(true);
-    AmmoDisplay.SetActive(true);
+ 
 }

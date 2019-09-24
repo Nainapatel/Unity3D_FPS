@@ -1,5 +1,6 @@
 // var Flash : GameObject;
 
+
 function Update () {
     if(GlobalAmmo.LoadedAmmo >= 1) {
     if(Input.GetButtonDown("Fire1")) {

@@ -7,15 +7,22 @@ function DeductPoints (DamageAmount : int) {
 
 function Update () {
     if (EnemyHealth <= 0) {
-        this.GetComponent("SpiderFollow").enabled = false;
-        TheSpider.GetComponent.<Animation>().Play("Death");
-        EnemyHealth = 1;
+        
         EndZombie();
     }
 }
 
 function EndZombie () {
     yield WaitForSeconds(1);
-        Destroy(gameObject);
-        GlobalScore.CurrentScore += 1;
+    this.GetComponent("SpiderFollow").enabled = false;
+        TheSpider.GetComponent.<Animation>().Play("Death");
+        EnemyHealth = 1;
+        SpiderEnd();
+       
+}
+
+function SpiderEnd() {
+    yield WaitForSeconds(1);
+    Destroy(gameObject);
+    GlobalScore.CurrentScore += 1;
 }
