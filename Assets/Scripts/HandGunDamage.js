@@ -32,6 +32,9 @@ function Update () {
                       if(hit.transform.tag == "Spider") {
                             Instantiate(TheBloodGreen, hit.point, Quaternion.FromToRotation(Vector3.up, hit.normal));
                         }
+                        if(hit.transform.tag == "Knife") {
+                            Instantiate(TheBloodGreen, hit.point, Quaternion.FromToRotation(Vector3.up, hit.normal));
+                        }
                        if(hit.transform.tag == "Untagged"){
                             Instantiate(TheBullet, hit.point, Quaternion.FromToRotation(Vector3.up, hit.normal));
                         }

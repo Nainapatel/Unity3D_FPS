@@ -8,10 +8,12 @@ var PickUp9mm : GameObject;
 var PickUpSniper : GameObject;
 var PickUpSMG : GameObject;
 var PickUpKnife : GameObject;
+var CursorObj : GameObject;
 
 
 function Update () {
     PickUp = 1;
+    CursorObj.SetActive(false);
 }
 
 

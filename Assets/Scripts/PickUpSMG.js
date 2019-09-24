@@ -14,14 +14,18 @@ var PickUp9mm : GameObject;
 var PickUpSniper : GameObject;
 var PickUpSMG : GameObject;
 var PickUpKnife : GameObject;
+var CursorObj : GameObject;
+
 
 function Update () {
     TheDistance = PlayerCasting.DistanceFronTarget;
+   
 }
 
 function OnMouseOver () {
     if (TheDistance <= 2) {
         TextDisplay.GetComponent.<Text>().text = "Take SMG";
+        CursorObj.SetActive(true);
     }
     if (Input.GetButtonDown("Action")) {
         PickUpRifle.SetActive(false);
