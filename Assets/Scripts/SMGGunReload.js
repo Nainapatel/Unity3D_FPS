@@ -12,7 +12,7 @@ function Update () {
     if (ReserveCount == 0) {
         ReloadAvailable = 0;
     }else{
-        ReloadAvailable = 10 - ClipCount;
+        ReloadAvailable = 30 - ClipCount;
        
     }
     if (Input.GetButtonDown("Reload")){

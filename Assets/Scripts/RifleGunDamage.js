@@ -3,7 +3,7 @@ var TargetDistance : float;
 var AllowedRange : float = 80;
 
 var hit : RaycastHit;
-var TheBullet : GameObject;
+// var TheBullet : GameObject;
 var TheBlood : GameObject;
 var TheBloodGreen : GameObject;
 
@@ -32,9 +32,9 @@ function Update () {
                       if(hit.transform.tag == "Spider") {
                             Instantiate(TheBloodGreen, hit.point, Quaternion.FromToRotation(Vector3.up, hit.normal));
                         }
-                       if(hit.transform.tag == "Untagged"){
-                            Instantiate(TheBullet, hit.point, Quaternion.FromToRotation(Vector3.up, hit.normal));
-                        }
+                    //    if(hit.transform.tag == "Dea"){
+                    //         Instantiate(TheBullet, hit.point, Quaternion.FromToRotation(Vector3.up, hit.normal));
+                    //     }
                     }
                     Shot.transform.SendMessage("DeductPoints", DamageAmount); 
                     DamageAmount = 5;
